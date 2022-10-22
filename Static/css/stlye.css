@@ -1,0 +1,139 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --hdfonts:'Roboto', sans-serif;
+    --pfont:'Open Sans', sans-serif;
+    --linkfont:'PT Sans', sans-serif; 
+    --color1:#FFBE25;
+}
+/* Landing page styling starts */
+#landing_page{
+    width: auto;
+    height: 100vh;
+    background-image: url("../img/hero-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Nav Styling Starts */
+nav{
+    width: auto;
+    height: 15%;
+    padding: 0% 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Brand Styling Starts */
+#brand{
+    width: 25%;
+    height: 100%;
+    padding: 10px 0%;
+}
+#brand a{
+    text-decoration: none;
+}
+#brand h2{
+    color: white;
+    font-family: 'Inknut Antiqua', serif;
+    -webkit-animation: rotate-in-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: rotate-in-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-name: brand;
+}
+@-webkit-keyframes brand {
+    0% {
+      -webkit-transform: rotate(-360deg);
+              transform: rotate(-360deg);
+      -webkit-transform-origin: right;
+              transform-origin: right;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+      -webkit-transform-origin: right;
+              transform-origin: right;
+      opacity: 1;
+    }
+  }
+  @keyframes brand {
+    0% {
+      -webkit-transform: rotate(-360deg);
+              transform: rotate(-360deg);
+      -webkit-transform-origin: right;
+              transform-origin: right;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+      -webkit-transform-origin: right;
+              transform-origin: right;
+      opacity: 1;
+    }
+  }
+  /* Brand Styling Ends */
+
+  /* NavMenu Styling Starts */
+#nav-menu{
+    width: 35%;
+    height: auto;
+    padding-top:30px ;
+}
+#nav-menu ul{
+    display: flex;
+}
+#nav-menu ul li{
+    margin: 0px 5%;
+    list-style: none;
+}
+#nav-menu ul li a{
+    color: white;
+    font-family: var(--linkfont);
+    text-decoration: none;
+    font-weight: 900;
+    transition-duration: 0.5s;
+}
+#nav-menu ul li a:hover{
+    color: var(--color1);
+}
+/* Nav Menu styling Ends */
+
+/* Others Styling */
+#others{
+    width: 25%;
+    height: 100%;
+    padding: 30px 0;
+}
+#others i{
+    margin: 0 6px;
+    color: white;
+}
+#others a{
+    text-decoration: none;
+}
+#others a i{
+    transition-duration: 0.5s;
+}
+#others a:hover i{
+    color: var(--color1);
+}
+#others .btn1{
+    padding: 5px 13px;
+    background-color:var(--color1);
+    margin: 0 10px;
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+    transition-duration:0.3s ;
+}
+#others .btn1:hover{
+    background-color: #ffbe25c9;
+}
+/* Others Styling Ends */
+/* Nav Styling Ends */
+
+/* Landing Page Styling Ends */
