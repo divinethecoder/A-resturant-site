@@ -10,6 +10,12 @@
     --color1:#FFBE25;
 }
 /* Landing page styling starts */
+
+.overlay{
+    width: auto;
+    height: inherit;
+    background-color: rgba(0,0,0,0.7);
+}
 #landing_page{
     width: auto;
     height: 100vh;
@@ -43,39 +49,7 @@ nav{
 	        animation: rotate-in-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation-name: brand;
 }
-@-webkit-keyframes brand {
-    0% {
-      -webkit-transform: rotate(-360deg);
-              transform: rotate(-360deg);
-      -webkit-transform-origin: right;
-              transform-origin: right;
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: rotate(0deg);
-              transform: rotate(0deg);
-      -webkit-transform-origin: right;
-              transform-origin: right;
-      opacity: 1;
-    }
-  }
-  @keyframes brand {
-    0% {
-      -webkit-transform: rotate(-360deg);
-              transform: rotate(-360deg);
-      -webkit-transform-origin: right;
-              transform-origin: right;
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: rotate(0deg);
-              transform: rotate(0deg);
-      -webkit-transform-origin: right;
-              transform-origin: right;
-      opacity: 1;
-    }
-  }
-  /* Brand Styling Ends */
+ /* Brand Styling Ends */
 
   /* NavMenu Styling Starts */
 #nav-menu{
@@ -121,7 +95,7 @@ nav{
 #others a:hover i{
     color: var(--color1);
 }
-#others .btn1{
+ .btn1{
     padding: 5px 13px;
     background-color:var(--color1);
     margin: 0 10px;
@@ -130,10 +104,233 @@ nav{
     text-decoration: none;
     transition-duration:0.3s ;
 }
-#others .btn1:hover{
+ .btn1:hover{
     background-color: #ffbe25c9;
 }
 /* Others Styling Ends */
 /* Nav Styling Ends */
 
+/* MainStyling Starts */
+main{
+    width: auto;
+    height: 85%;
+    padding: 10px 55px;
+}
+.text1{
+    width: 50%;
+    height: 85%;
+    padding: 50px 20px;
+}
+.text1 h1{
+    color: white;
+    font-family:  'Inknut Antiqua', serif;
+}
+.text1 p{
+    color: white;
+    font-family: var(--pfont);
+    font-size: 1.4em;
+}
+
+/* MainStyling Ends */
 /* Landing Page Styling Ends */
+.space{
+    width: auto;
+    height: 70px;
+}
+/* Special Styling Starts */
+#special{
+    width: auto;
+    height: fit-content;
+}
+#special h2{
+    font-family: var(--hdfonts);
+    font-size: 2em;
+    text-align: center;
+}
+#special p{
+    font-family: var(--pfont);
+    text-align: center;
+    font-size: 0.8em;
+}
+#special-container{
+    width: 90%;
+    height: fit-content;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.box1{
+    width: 45%;
+    background-color: #212832;
+    height: 180px;
+    margin-top: 15px;
+}
+/* Special Styling Ends */
+
+/* Menu Styling Starts */
+#menu{
+    width: auto;
+    height: fit-content;
+}
+#menu h2{
+    font-family: var(--hdfonts);
+    font-size: 2em;
+    text-align: center;
+}
+#menu p{
+    text-align: center;
+    font-family: var(--pfont);
+    font-size: 1em;
+}
+#menu-container{
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    flex-wrap:wrap;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+.box2{
+    width: 30%;
+    height: 280px;
+    border-radius: 15px;
+    -webkit-box-shadow: 2px 2px 5px 1px rgba(122,122,122,1);
+    -moz-box-shadow: 2px 2px 5px 1px rgba(122,122,122,1);
+    box-shadow: 2px 2px 5px 1px rgba(122,122,122,1);
+    margin: 10px 0px;
+    background-color: #212832;
+}
+.box2:hover{
+        scale: 105%;
+        transition: all 2s ease-in-out;
+}
+.box2:hover .pic{
+    filter: brightness(50%);
+    transition: all 1s ease;
+}
+.pic{
+    width: auto;
+    height: 60%;
+    border-bottom-left-radius:50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pic1{
+    background-image: url(/Static/img/Food\ \(1\).jpg);
+}
+.pic2{
+    background-image: url(/Static/img/Food\ \(2\).jpg);
+}
+.pic3{
+    background-image: url(/Static/img/Food\ \(3\).jpg);
+}
+.pic4{
+    background-image: url(../img/Food\ \(4\).jpeg);
+}
+.pic5{
+    background-image: url(../img/Food\ \(5\).jpg);
+}
+.pic6{
+    background-image: url(../img/Food\ \(6\).jpeg);
+}
+.pic7{
+    background-image: url(../img/Food\ \(7\).jpeg);
+}
+.pic8{
+    background-image: url(../img/Food\ \(8\).jpeg);
+}
+.pic9{
+    background-image: url(../img/Food\ \(9\).jpeg);
+}
+/* Menu Styling Ends */
+
+/* recipe Styling Begins */
+#recipe{
+    width: auto;
+    height: fit-content;
+}
+#recipe .spec{
+    font-family: var(--hdfonts);
+    font-size: 2em;
+    text-align: center;
+}
+#recipe .spe{
+    text-align: center;
+    font-family: var(--pfont);
+    font-size: 1em;
+}
+.recipe-box{
+    width: 85%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+.box3{
+    width: 45%;
+    height: 300px;
+    margin: 50px auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+.box3 h2{
+    text-align: left;
+    font-size: 0.5em;
+}
+.recipe1{
+    background-image: url(/Static/img/Recipe\ \(1\).jpeg);
+}
+.recipe2{
+    background-image: url(/Static/img/Recipe\ \(2\).jpeg);
+}
+.recipe3{
+    background-image: url(/Static/img/Recipe\ \(3\).jpeg);
+}
+.recipe4{
+    background-image: url(/Static/img/Recipe\ \(4\).jpeg);
+}
+/* Recipe Styling Ends */
+
+/* About Styling Starts */
+#about{
+    height: fit-content;
+    width: auto;
+    background-color: #212832;
+    padding-top: 30px;
+}
+#about h2{
+    color: white;
+    margin-bottom: 20px;
+}
+#about_container{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+.box4{
+    width: 45%;
+    height: 300px;
+    border-radius: 10px;
+    padding-top: 20px;
+}
+.box4 p{
+    color: white;
+    font-family: var(--pfont);
+    font-size: 1.2em;
+}
+.box4 i{
+    color: var(--color1);
+}
+.about_pic{
+    background-image: url(../img/About\ Us.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* About Styling Ends */
